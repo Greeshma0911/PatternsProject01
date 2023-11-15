@@ -4,5 +4,5 @@ RUN mvn clean package -Pprod -DskipTests
 
 
 FROM openjdk:11-jdk-slim
-COPY --from=build /target/DogsManagementSystemm-0.0.1-SNAPSHOT.jar DogsManagementSystemm.jar
-CMD ["java", "-jar", "DogsManagementSystemm.jar"]
+COPY --from=build /target/DogManagementSystemm-0.0.1-SNAPSHOT.jar DogManagementSystemm.jar
+CMD ["java", "-jar", "DogManagementSystemm.jar"]
